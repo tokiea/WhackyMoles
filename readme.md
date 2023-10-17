@@ -7,4 +7,4 @@
 > 解决了 python3.9+ 弃用 random.simple 的异常提醒
 
 
-![tupian](resources\image\background.jpg)
+![tupian](./resources/image/background.jpg)

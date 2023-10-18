@@ -1,0 +1,39 @@
+- name: Deploy HelmFile
+  # You may pin to the exact commit or the version.
+  # uses: cloudposse/github-action-deploy-helmfile@e5396120c8d09d826889c286a3c7e27fa17f3f15
+  uses: cloudposse/github-action-deploy-helmfile@0.5.0
+  with:
+    # Cluster name
+    cluster: 
+    # AWS region
+    aws-region: # optional, default is us-east-1
+    # The path where lives the helmfile.
+    helmfile-path: # optional, default is deploy
+    # Helmfile name
+    helmfile: # optional, default is helmfile.yaml
+    # Operation with helmfiles. (valid options - `deploy`, `destroy`)
+    operation: # default is deploy
+    # Helmfile environment
+    environment: # optional, default is preview
+    # Git SHA
+    gitref-sha: # optional, default is 
+    # Kubernetes namespace
+    namespace: 
+    # Docker image
+    image: 
+    # Docker image tag
+    image-tag: 
+    # Debug mode
+    debug: # optional, default is false
+    # The name of the label used to describe the helm release
+    release_label_name: # optional, default is release
+    # YAML string with extra values to use in a helmfile deploy
+    values_yaml: # optional
+    # Helm version
+    helm_version: # optional, default is 3.11.1
+    # Helmfile version
+    helmfile_version: # optional, default is 0.143.5
+    # Kubectl version
+    kubectl_version: # optional, default is 1.26.3
+    # Kubectl version
+    chamber_version: # optional, default is 2.11.1
